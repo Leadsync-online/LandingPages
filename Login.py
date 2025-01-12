@@ -20,7 +20,7 @@ st.markdown(
 # Main app layout
 def main():
     st.title("Lead Sync")
-    st.write("Log in or sign up to continue.")
+    st.write("sign up to continue.")
 
     # Login form
     st.subheader("Login")
