@@ -33,10 +33,8 @@ def main():
     col1, col2, col3 = st.columns([1,7,1])  # Adjust column ratios as needed
     with col2:
 
-            if user:
-                st.session_state["user"] = user
-                st.success("Logged in successfully!")
-                st.switch_page("pages/Home.py")
+        if user:
+            st.session_state["user"] = user
     # Sign-up button
         if st.button("Signup", use_container_width=True):
             user = md.login(username, password)
