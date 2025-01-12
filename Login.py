@@ -32,15 +32,15 @@ def main():
 
     col1, col2, col3 = st.columns([1,7,1])  # Adjust column ratios as needed
     with col2:
-        if st.button("Login ", use_container_width=True):
-            user = md.login(username, password)
+
             if user:
                 st.session_state["user"] = user
                 st.success("Logged in successfully!")
                 st.switch_page("pages/Home.py")
     # Sign-up button
         if st.button("Signup", use_container_width=True):
-            st.switch_page("pages/Signup.py")
+            user = md.login(username, password)
+            st.switch_page("pages/Finish.py")
 
 # Handle page routing
 main()
