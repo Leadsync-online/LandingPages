@@ -19,12 +19,15 @@ st.markdown(
 
 # Main app layout
 def main():
-    st.title("Dialler Sync")
+    st.title("Lead Sync")
     st.write("Log in or sign up to continue.")
 
     # Login form
     st.subheader("Login")
     username = st.text_input("Email", key="login_email")
+    name = st.text_input("NAme", key="login_email")
+    Surname = st.text_input("Surname", key="login_email")
+    Phonenumber = st.text_input("Phone Number", key="login_email")
     password = st.text_input("Password", type="password", key="login_password")
 
     col1, col2, col3 = st.columns([1,7,1])  # Adjust column ratios as needed
