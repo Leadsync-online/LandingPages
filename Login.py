@@ -25,10 +25,11 @@ def main():
     # Login form
     st.subheader("Login")
     username = st.text_input("Email", key="login_email")
+    idnumber = st.text_input("ID Number", key="login_idnumber")
     name = st.text_input("Name", key="login_name")
     Surname = st.text_input("Surname", key="login_surname")
     Phonenumber = st.text_input("Phone Number", key="login_phonenumber")
-    password = st.text_input("Password", type="password", key="login_password")
+
 
     col1, col2, col3 = st.columns([1,7,1])  # Adjust column ratios as needed
     with col2:
